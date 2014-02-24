@@ -1,0 +1,227 @@
+// Colors
+$darkBlueColor: #163173;
+$lightBlueColor: #E7ECF2;
+$lightGrayColor: #f4f4f4;
+$mediumGrayColor: #d8b808;
+$darkGrayColor: #222222;
+$whiteColor: #ffffff;
+$blackColor: #000000;
+$lightGreenColor: #9bceb6;
+$darkGreenColor: #24302b;
+
+// Fonts
+$fontStack: 'Capriola', Helvetica, Arial, sans-serif;
+$companyFontStack: Helvetica, Arial, sans-serif;;
+
+// Sizes
+$separatorHeight: 10px;
+$appIconRadius: 18%;
+$calloutBoxRadius: 20px;
+$calloutBoxBackgroundColor: $lightGrayColor;
+$calloutBoxFontColor: $darkGreenColor;
+
+// Responsive design
+$break-small: 500px;
+$break-large: 1500px;
+
+// Mixins
+@mixin linear-gradient-nav() {
+  background-color: $whiteColor; /* fallback color if gradients are not supported */
+  background-image: -webkit-linear-gradient(right, hsla(240,46%,37%,1.0), hsla(240,46%,37%,0.4)); /* For Chrome and Safari */
+  background-image:    -moz-linear-gradient(right, hsla(240,46%,37%,1.0), hsla(240,46%,37%,0.4)); /* For old Fx (3.6 to 15) */
+  background-image:     -ms-linear-gradient(right, hsla(240,46%,37%,1.0), hsla(240,46%,37%,0.4)); /* For pre-releases of IE 10*/
+  background-image:      -o-linear-gradient(right, hsla(240,46%,37%,1.0), hsla(240,46%,37%,0.4)); /* For old Opera (11.1 to 12.0) */ 
+  background-image:         linear-gradient(to left,  rgba(245, 245, 245, 1) 85%, rgba(245, 245, 245,  0.2) 98%, rgba(245, 245, 245, 0)); /* W3C */
+}
+
+@mixin calculated-width($rightPadding) {
+    width: -moz-calc(100% - #{$rightPadding}px);
+    width: -webkit-calc(100% - #{$rightPadding}px);
+    width: calc(100% - #{$rightPadding}px);
+}
+
+@mixin menu-width($menuWidth) {
+  width: #{$menuWidth}px;
+}
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $break-large) { @content; }
+  }
+}
+
+
+
+
+
+body {
+  background-color: $whiteColor;  
+  color: $darkBlueColor;
+  font-family: $fontStack;
+  padding:0% 150px 0% 3%;
+  @include respond-to(handhelds) { padding-right:80px; font-size:smaller;}
+  @include respond-to(medium-screens) {  }
+  @include respond-to(wide-screens) {padding-right: 200px; font-size:larger; }
+
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  overflow: auto;
+  background-color: $whiteColor;
+  color: $lightBlueColor;
+  position: relative;
+  padding: 10px 0px 20px 0px;
+}
+
+footer {
+  margin-top:4em;
+  border-top:1px solid #a9a9a9;
+  padding:10px;
+  color:#868686;
+  font-size:x-small;
+}
+
+nav {
+  float: right;
+  font-size:normal;
+
+
+  ul {
+    @include linear-gradient-nav();
+    @include respond-to(handhelds) { width: 70px; font-size:smaller;}
+    @include respond-to(medium-screens) { width: 140px; }
+    @include respond-to(wide-screens) { width: 180px; font-size:larger; }
+    border: 0;
+    list-style: none;
+    padding: 1em;
+    position: absolute;
+     top: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0;
+  }
+
+  li { 
+    display: block;
+    position: relative;
+    text-align: right;
+  }
+
+  a {
+    color: $darkGrayColor;
+    display: block;
+    padding: 6px 10px 10px 30px;
+    @include respond-to(handhelds) { padding-left:10px; }
+    @include respond-to(medium-screens) { padding-left:15px; }
+    @include respond-to(wide-screens) {padding-left:30px; }
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: $mediumGrayColor;
+    text-decoration:none;
+  }
+}
+
+article {
+  background-color: $lightGrayColor;
+  color: $calloutBoxFontColor;
+  border:none;
+  border-radius: $calloutBoxRadius;
+  overflow:hidden;
+}
+
+main {
+  display: block;
+  background:$whiteColor;
+}
+
+
+/* Links */
+
+a {
+  color: $lightGrayColor;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $whiteColor;
+  text-decoration:underline;
+}
+
+/* Custom classes */
+
+
+.featured-app-review {
+
+  background: $lightGrayColor;
+  @include calculated-width(40);
+  overflow:auto;
+  padding:10px;
+  
+  .featured-app-title {
+    width:76%;
+    float:right;
+    font-size:larger;
+    a {
+      color: $darkGreenColor;
+      text-decoration: none;
+    }
+    a:hover {
+      color: $lightGreenColor;
+      text-decoration:underline;
+    }
+  }
+  
+  .featured-app-logo {
+    max-width:20%;
+    float:left;
+    margin-right:4%;
+    border:none;
+    border-radius:$appIconRadius;
+  }
+  
+  .featured-app-description {
+    width:76%;
+    float:right;
+  }
+}
+
+.taglines {
+  font-family:$companyFontStack;
+  color:$blackColor;
+
+  padding: 5% 20% 10% 20%;
+  @include respond-to(handhelds) {   font-size:120%;}
+  @include respond-to(medium-screens) { font-size:170%; }
+  @include respond-to(wide-screens) {  font-size:200%; }
+}
+
+
+.header-logo {
+  @include calculated-width(10);
+  max-width:428px; 
+  max-height:100px;
+}
+
+.separator {
+  height: $separatorHeight;
+}
+
+.app-store-download {
+  padding:10px;
+  height:40px;
+  float:right;
+}
+
+.bio {
+  color:$lightGreenColor;
+}

@@ -1,0 +1,179 @@
+// Colors
+$darkBlueColor: #163173;
+$lightGrayColor: #f4f4f4;
+$mediumGrayColor: #d8b808;
+$darkGrayColor: #222222;
+$lightGreenColor: #9bceb6;
+$darkGreenColor: #24302b;
+
+// Fonts
+$fontStack: 'Capriola', Helvetica, Arial, sans-serif;
+$companyFontStack: Helvetica, Arial, sans-serif;;
+
+// Sizes
+$appIconRadius: 18%;
+$calloutBoxRadius: 20px;
+
+// Responsive design
+$break-small: 630px;
+$break-large: 1000px;
+$header-short: 100px;
+$header-tall: 140px;
+$min-logo-width: 300px;
+
+
+// Mixins
+@mixin respond_to($media) {
+  @if $media == narrow-screens {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $break-large) { @content; }
+  }
+}
+
+@mixin calculated_width_with_padding($fullWidth, $padding) {
+    width: -moz-calc(#{$fullWidth} - #{$padding});
+    width: -webkit-calc(#{$fullWidth} - #{$padding});
+    width: calc(#{$fullWidth} - #{$padding});
+}
+
+
+
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Common */
+
+html, body { height: 100%; }
+
+body {
+  background-color: #fff;  
+  color: $darkBlueColor;
+  font-family: $fontStack;
+  text-align: center;
+  @include respond_to(narrow-screens) { font-size: small;}
+  @include respond_to(medium-screens) { font-size: medium; }
+  @include respond_to(wide-screens)   { font-size: large; }
+}
+
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+h1 { margin-bottom: 1em; }
+p { margin: 1em 0; }
+
+a         { color: #00b; }
+a:visited { color: #a0a; }
+a:hover   { color: #00f; }
+
+
+/* Site */
+
+.site {
+  font-size: 115%;
+  text-align: justify;
+  @include respond_to(narrow-screens) { width: 90%; }
+  @include respond_to(medium-screens) { width: 80%; }
+  @include respond_to(wide-screens)   { width: calc(0.8 * #{$break-large}); }
+  margin: 2em auto 2em;
+  line-height: 1.5em;
+}
+
+
+.header {
+  width: 100%;
+  @include respond_to(narrow-screens) { height: $header-tall; text-align: center; font-size:small; }
+  @include respond_to(medium-screens) { height: $header-short; font-size: medium;}
+  @include respond_to(wide-screens)   { height: $header-short; font-size: medium;}
+  overflow: auto;
+  //padding: 10px 0px 20px;
+
+  .logo {
+    max-width:3000px;
+    max-height:700px;
+    width: auto;
+    height: auto;
+    @include respond_to(narrow-screens) { width: $min-logo-width; float: middle; }
+    @include respond_to(medium-screens) { width: $min-logo-width; }
+    @include respond_to(wide-screens)   { width: $min-logo-width; }
+  }
+  
+  .navmenu {
+    @include calculated_width_with_padding(100%, $min-logo-width);
+    @include respond_to(narrow-screens) { width: 100%; float: middle; height: calc(0.3 * $header-tall); }
+    @include respond_to(medium-screens) { float:right; text-align: right; height: $header-short; padding-top: 24px; }
+    @include respond_to(wide-screens)   { float:right; text-align: right; height: $header-short; padding-top: 24px; }
+    color: #aaa;
+    
+    
+    ul {
+      padding: 1em;
+      list-style: none outside none;
+      li {
+        display: inline;
+      }
+    }
+
+    a {
+      font-weight: bold;
+      text-decoration: none;
+      margin-left: 1em;
+    }
+    a:hover {
+      color: #880;
+    }
+  }
+}
+
+
+
+.featured-app-review {
+
+  background: $lightGrayColor;
+  overflow:auto;
+  padding:10px;
+  border-radius: $calloutBoxRadius;
+  
+  .featured-app-title {
+    width:76%;
+    float:right;
+    font-size:larger;
+    a {
+      color: $darkGreenColor;
+      text-decoration: none;
+    }
+    a:hover {
+      color: $lightGreenColor;
+      text-decoration:underline;
+    }
+  }
+  
+  .featured-app-logo {
+    max-width:20%;
+    float:left;
+    margin-right:4%;
+    border:none;
+    border-radius:$appIconRadius;
+  }
+  
+  .featured-app-description {
+    width:72%;
+    margin-right: 4%;
+    float:right;
+  }
+}
+
+
+/* Apple-related */
+
+.app-store-download {
+  padding:10px;
+  height:40px;
+  float:right;
+}

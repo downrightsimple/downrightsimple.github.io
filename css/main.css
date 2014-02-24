@@ -1,0 +1,154 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* Common */
+html, body {
+  height: 100%; }
+
+body {
+  background-color: #fff;
+  color: #163173;
+  font-family: "Capriola", Helvetica, Arial, sans-serif;
+  text-align: center; }
+  @media only screen and (max-width: 630px) {
+    body {
+      font-size: small; } }
+  @media only screen and (min-width: 631px) and (max-width: 999px) {
+    body {
+      font-size: medium; } }
+  @media only screen and (min-width: 1000px) {
+    body {
+      font-size: large; } }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; }
+
+h1 {
+  margin-bottom: 1em; }
+
+p {
+  margin: 1em 0; }
+
+a {
+  color: #00b; }
+
+a:visited {
+  color: #a0a; }
+
+a:hover {
+  color: #00f; }
+
+/* Site */
+.site {
+  font-size: 115%;
+  text-align: justify;
+  margin: 2em auto 2em;
+  line-height: 1.5em; }
+  @media only screen and (max-width: 630px) {
+    .site {
+      width: 90%; } }
+  @media only screen and (min-width: 631px) and (max-width: 999px) {
+    .site {
+      width: 80%; } }
+  @media only screen and (min-width: 1000px) {
+    .site {
+      width: calc(0.8 * 1000px); } }
+
+.header {
+  width: 100%;
+  overflow: auto; }
+  @media only screen and (max-width: 630px) {
+    .header {
+      height: 140px;
+      text-align: center;
+      font-size: small; } }
+  @media only screen and (min-width: 631px) and (max-width: 999px) {
+    .header {
+      height: 100px;
+      font-size: medium; } }
+  @media only screen and (min-width: 1000px) {
+    .header {
+      height: 100px;
+      font-size: medium; } }
+  .header .logo {
+    max-width: 3000px;
+    max-height: 700px;
+    width: auto;
+    height: auto; }
+    @media only screen and (max-width: 630px) {
+      .header .logo {
+        width: 300px;
+        float: middle; } }
+    @media only screen and (min-width: 631px) and (max-width: 999px) {
+      .header .logo {
+        width: 300px; } }
+    @media only screen and (min-width: 1000px) {
+      .header .logo {
+        width: 300px; } }
+  .header .navmenu {
+    width: -moz-calc(100% - 300px);
+    width: -webkit-calc(100% - 300px);
+    width: calc(100% - 300px);
+    color: #aaa; }
+    @media only screen and (max-width: 630px) {
+      .header .navmenu {
+        width: 100%;
+        float: middle;
+        height: calc(0.3 * $header-tall); } }
+    @media only screen and (min-width: 631px) and (max-width: 999px) {
+      .header .navmenu {
+        float: right;
+        text-align: right;
+        height: 100px;
+        padding-top: 24px; } }
+    @media only screen and (min-width: 1000px) {
+      .header .navmenu {
+        float: right;
+        text-align: right;
+        height: 100px;
+        padding-top: 24px; } }
+    .header .navmenu ul {
+      padding: 1em;
+      list-style: none outside none; }
+      .header .navmenu ul li {
+        display: inline; }
+    .header .navmenu a {
+      font-weight: bold;
+      text-decoration: none;
+      margin-left: 1em; }
+    .header .navmenu a:hover {
+      color: #880; }
+
+.featured-app-review {
+  background: #f4f4f4;
+  overflow: auto;
+  padding: 10px;
+  border-radius: 20px; }
+  .featured-app-review .featured-app-title {
+    width: 76%;
+    float: right;
+    font-size: larger; }
+    .featured-app-review .featured-app-title a {
+      color: #24302b;
+      text-decoration: none; }
+    .featured-app-review .featured-app-title a:hover {
+      color: #9bceb6;
+      text-decoration: underline; }
+  .featured-app-review .featured-app-logo {
+    max-width: 20%;
+    float: left;
+    margin-right: 4%;
+    border: none;
+    border-radius: 18%; }
+  .featured-app-review .featured-app-description {
+    width: 72%;
+    margin-right: 4%;
+    float: right; }
+
+/* Apple-related */
+.app-store-download {
+  padding: 10px;
+  height: 40px;
+  float: right; }

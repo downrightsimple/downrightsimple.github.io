@@ -15,7 +15,7 @@ $appIconRadius: 18%;
 $calloutBoxRadius: 20px;
 
 // Responsive design
-$break-small: 630px;
+$break-small: 800px;
 $break-large: 1000px;
 $header-short: 100px;
 $header-tall: 140px;
@@ -106,13 +106,13 @@ a:hover   { color: #00f; }
   .navmenu {
     @include calculated_width_with_padding(100%, $min-logo-width);
     @include respond_to(narrow-screens) { width: 100%; float: middle; height: calc(0.3 * $header-tall); }
-    @include respond_to(medium-screens) { float:right; text-align: right; height: calc($header-short - 24px); padding-top: 24px; }
-    @include respond_to(wide-screens)   { float:right; text-align: right; height: calc($header-short - 24px); padding-top: 24px; }
+    @include respond_to(medium-screens) { float:right; text-align: right; height: calc($header-short - 40px); padding-top: 40px; }
+    @include respond_to(wide-screens)   { float:right; text-align: right; height: calc($header-short - 40px); padding-top: 40px; }
     color: #aaa;
     
     
     ul {
-      padding: 1em;
+      
       list-style: none outside none;
       li {
         display: inline;

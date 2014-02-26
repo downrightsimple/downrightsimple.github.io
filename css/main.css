@@ -12,10 +12,10 @@ body {
   color: #163173;
   font-family: "Capriola", Helvetica, Arial, sans-serif;
   text-align: center; }
-  @media only screen and (max-width: 630px) {
+  @media only screen and (max-width: 800px) {
     body {
       font-size: small; } }
-  @media only screen and (min-width: 631px) and (max-width: 999px) {
+  @media only screen and (min-width: 801px) and (max-width: 999px) {
     body {
       font-size: medium; } }
   @media only screen and (min-width: 1000px) {
@@ -46,10 +46,10 @@ a:hover {
   text-align: justify;
   margin: 2em auto 2em;
   line-height: 1.5em; }
-  @media only screen and (max-width: 630px) {
+  @media only screen and (max-width: 800px) {
     .site {
       width: 90%; } }
-  @media only screen and (min-width: 631px) and (max-width: 999px) {
+  @media only screen and (min-width: 801px) and (max-width: 999px) {
     .site {
       width: 80%; } }
   @media only screen and (min-width: 1000px) {
@@ -59,12 +59,12 @@ a:hover {
 .header {
   width: 100%;
   overflow: auto; }
-  @media only screen and (max-width: 630px) {
+  @media only screen and (max-width: 800px) {
     .header {
       height: 140px;
       text-align: center;
       font-size: small; } }
-  @media only screen and (min-width: 631px) and (max-width: 999px) {
+  @media only screen and (min-width: 801px) and (max-width: 999px) {
     .header {
       height: 100px;
       font-size: medium; } }
@@ -76,12 +76,12 @@ a:hover {
     max-width: 3000px;
     max-height: 700px;
     height: auto; }
-    @media only screen and (max-width: 630px) {
+    @media only screen and (max-width: 800px) {
       .header .logo {
         width: 300px;
         float: middle;
         display: inline; } }
-    @media only screen and (min-width: 631px) and (max-width: 999px) {
+    @media only screen and (min-width: 801px) and (max-width: 999px) {
       .header .logo {
         width: 300px;
         float: left;
@@ -96,25 +96,24 @@ a:hover {
     width: -webkit-calc(100% - 300px);
     width: calc(100% - 300px);
     color: #aaa; }
-    @media only screen and (max-width: 630px) {
+    @media only screen and (max-width: 800px) {
       .header .navmenu {
         width: 100%;
         float: middle;
         height: calc(0.3 * $header-tall); } }
-    @media only screen and (min-width: 631px) and (max-width: 999px) {
+    @media only screen and (min-width: 801px) and (max-width: 999px) {
       .header .navmenu {
         float: right;
         text-align: right;
-        height: calc($header-short - 24px);
-        padding-top: 24px; } }
+        height: calc($header-short - 40px);
+        padding-top: 40px; } }
     @media only screen and (min-width: 1000px) {
       .header .navmenu {
         float: right;
         text-align: right;
-        height: calc($header-short - 24px);
-        padding-top: 24px; } }
+        height: calc($header-short - 40px);
+        padding-top: 40px; } }
     .header .navmenu ul {
-      padding: 1em;
       list-style: none outside none; }
       .header .navmenu ul li {
         display: inline; }

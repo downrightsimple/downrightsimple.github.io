@@ -99,8 +99,8 @@ a:hover   { color: #00f; }
     max-height:700px;
     height: auto;
     @include respond_to(narrow-screens) { width: $min-logo-width; float:middle; display:inline;}
-    @include respond_to(medium-screens) { width: $min-logo-width; float:left; }
-    @include respond_to(wide-screens)   { width: $min-logo-width; float:left; }
+    @include respond_to(medium-screens) { width: $min-logo-width; float:left; display:block; }
+    @include respond_to(wide-screens)   { width: $min-logo-width; float:left; display:block;}
   }
   
   .navmenu {

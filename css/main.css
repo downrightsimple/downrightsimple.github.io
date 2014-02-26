@@ -84,11 +84,13 @@ a:hover {
     @media only screen and (min-width: 631px) and (max-width: 999px) {
       .header .logo {
         width: 300px;
-        float: left; } }
+        float: left;
+        display: block; } }
     @media only screen and (min-width: 1000px) {
       .header .logo {
         width: 300px;
-        float: left; } }
+        float: left;
+        display: block; } }
   .header .navmenu {
     width: -moz-calc(100% - 300px);
     width: -webkit-calc(100% - 300px);

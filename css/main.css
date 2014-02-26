@@ -75,18 +75,20 @@ a:hover {
   .header .logo {
     max-width: 3000px;
     max-height: 700px;
-    width: auto;
     height: auto; }
     @media only screen and (max-width: 630px) {
       .header .logo {
         width: 300px;
-        float: middle; } }
+        float: middle;
+        display: inline; } }
     @media only screen and (min-width: 631px) and (max-width: 999px) {
       .header .logo {
-        width: 300px; } }
+        width: 300px;
+        float: left; } }
     @media only screen and (min-width: 1000px) {
       .header .logo {
-        width: 300px; } }
+        width: 300px;
+        float: left; } }
   .header .navmenu {
     width: -moz-calc(100% - 300px);
     width: -webkit-calc(100% - 300px);
@@ -101,13 +103,13 @@ a:hover {
       .header .navmenu {
         float: right;
         text-align: right;
-        height: 100px;
+        height: calc($header-short - 24px);
         padding-top: 24px; } }
     @media only screen and (min-width: 1000px) {
       .header .navmenu {
         float: right;
         text-align: right;
-        height: 100px;
+        height: calc($header-short - 24px);
         padding-top: 24px; } }
     .header .navmenu ul {
       padding: 1em;

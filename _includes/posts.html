@@ -1,3 +1,5 @@
+{% assign count = {{site.posts | size}} %}
+{% if count > 0 %}
 <div id="posts"><A name="posts"></a>
 <h1>Blog Posts</h1>
   <ul class="posts">
@@ -6,3 +8,4 @@
     {% endfor %}
   </ul>
 </div>
+{% endif %}

@@ -1,3 +1,39 @@
+// Responsive design
+$break-small: 500px;
+$break-large: 1500px;
+
+// Mixins
+@mixin linear-gradient-nav() {
+  background-color: $whiteColor; /* fallback color if gradients are not supported */
+  background-image: -webkit-linear-gradient(right, hsla(240,46%,37%,1.0), hsla(240,46%,37%,0.4)); /* For Chrome and Safari */
+  background-image:    -moz-linear-gradient(right, hsla(240,46%,37%,1.0), hsla(240,46%,37%,0.4)); /* For old Fx (3.6 to 15) */
+  background-image:     -ms-linear-gradient(right, hsla(240,46%,37%,1.0), hsla(240,46%,37%,0.4)); /* For pre-releases of IE 10*/
+  background-image:      -o-linear-gradient(right, hsla(240,46%,37%,1.0), hsla(240,46%,37%,0.4)); /* For old Opera (11.1 to 12.0) */ 
+  background-image:         linear-gradient(to left,  rgba(245, 245, 245, 1) 85%, rgba(245, 245, 245,  0.2) 98%, rgba(245, 245, 245, 0)); /* W3C */
+}
+
+@mixin calculated-width($rightPadding) {
+    width: -moz-calc(100% - #{$rightPadding}px);
+    width: -webkit-calc(100% - #{$rightPadding}px);
+    width: calc(100% - #{$rightPadding}px);
+}
+
+@mixin menu-width($menuWidth) {
+  width: #{$menuWidth}px;
+}
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $break-large) { @content; }
+  }
+}
+
 
 /* Clearfix ----------- */
 .clearfix:after{ content:"";  display:block;  clear:both;  visibility:hidden;  line-height:0;  height:0}
@@ -36,7 +72,11 @@ COLUMNS
 =====================================*/
 .columns{width:100%; float:left; margin-bottom:0}
 .one_half{width:48%}
-.one_third{width:31.91%}
+.one_third{
+ @include respond-to(handhelds) {width:100%; padding-bottom: 20px;}
+ @include respond-to(medium-screens) { width:31.91%}
+@include respond-to(wide-screens) { width:31.91%  }
+}
 .two_third{width:65.33%}
 .one_fourth{width:23.40%}
 .three_fourth{width:74%}
@@ -46,6 +86,12 @@ COLUMNS
 .three_fifth{width:58.4%}
 .four_fifth{width:67.2%}
 .five_sixth{width:82.67%}
-.one_half, .one_third, .two_third, .three_fourth, .one_fourth, .one_fifth, .two_fifth, .three_fifth, .four_fifth, .one_sixth, .five_sixth{position:relative; margin-right:2%; float:left; margin-bottom:0}
-.last{margin-right:0 !important; clear:right}
+.one_half, .one_third, .two_third, .three_fourth, .one_fourth, .one_fifth, .two_fifth, .three_fifth, .four_fifth, .one_sixth, .five_sixth{
+position:relative; margin-right:2%; float:left; margin-bottom:0;
+ @include respond-to(handhelds) { margin-right:0!important; clear:right}
+ @include respond-to(medium-screens) { }
+@include respond-to(wide-screens) {   }
+
+}
+.last{margin-right:0 !important; clear:right;}
 .clearboth{clear:both; display:block; font-size:0; height:0; line-height:0; width:100%}

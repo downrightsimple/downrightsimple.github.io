@@ -73,8 +73,16 @@ COLUMNS
 .one_half {
   width: 48%; }
 
-.one_third {
-  width: 31.91%; }
+@media only screen and (max-width: 500px) {
+  .one_third {
+    width: 100%;
+    padding-bottom: 20px; } }
+@media only screen and (min-width: 501px) and (max-width: 1499px) {
+  .one_third {
+    width: 31.91%; } }
+@media only screen and (min-width: 1500px) {
+  .one_third {
+    width: 31.91%; } }
 
 .two_third {
   width: 65.33%; }
@@ -108,6 +116,10 @@ COLUMNS
   margin-right: 2%;
   float: left;
   margin-bottom: 0; }
+  @media only screen and (max-width: 500px) {
+    .one_half, .one_third, .two_third, .three_fourth, .one_fourth, .one_fifth, .two_fifth, .three_fifth, .four_fifth, .one_sixth, .five_sixth {
+      margin-right: 0 !important;
+      clear: right; } }
 
 .last {
   margin-right: 0 !important;

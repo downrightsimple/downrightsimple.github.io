@@ -132,3 +132,81 @@ COLUMNS
   height: 0;
   line-height: 0;
   width: 100%; }
+
+.contact_container {
+  width: 100%;
+  padding-top: 20px; }
+
+.contact {
+  position: relative;
+  float: left;
+  width: 40%; }
+  @media only screen and (max-width: 500px) {
+    .contact {
+      width: 100%;
+      margin-right: 0 !important;
+      clear: right;
+      padding-left: 30px; } }
+  @media only screen and (min-width: 501px) and (max-width: 1499px) {
+    .contact {
+      float: left;
+      width: 40%;
+      padding-left: 0px; } }
+  @media only screen and (min-width: 1500px) {
+    .contact {
+      float: left;
+      width: 40%;
+      padding-left: 0px; } }
+
+@media only screen and (max-width: 500px) {
+  .contact_form_header {
+    padding-left: 30px; } }
+@media only screen and (min-width: 501px) and (max-width: 1499px) {
+  .contact_form_header {
+    padding-left: 0px; } }
+@media only screen and (min-width: 1500px) {
+  .contact_form_header {
+    padding-left: 0px; } }
+
+.contact_divider {
+  padding-top: 100px;
+  position: relative;
+  float: left;
+  text-align: center; }
+  @media only screen and (max-width: 500px) {
+    .contact_divider {
+      width: 100%;
+      margin-right: 0 !important;
+      clear: right;
+      padding-top: 10px;
+      padding-bottom: 10px; } }
+  @media only screen and (min-width: 501px) and (max-width: 1499px) {
+    .contact_divider {
+      float: left;
+      width: 20%;
+      padding-left: 0px; } }
+  @media only screen and (min-width: 1500px) {
+    .contact_divider {
+      float: left;
+      width: 20%;
+      padding-left: 0px; } }
+
+.contact_form {
+  text-align: center;
+  position: relative;
+  float: left; }
+  @media only screen and (max-width: 500px) {
+    .contact_form {
+      width: 100%;
+      margin-right: 0 !important;
+      clear: right; } }
+  @media only screen and (min-width: 501px) and (max-width: 1499px) {
+    .contact_form {
+      float: left;
+      width: 40%;
+      padding-left: 0px; } }
+  @media only screen and (min-width: 1500px) {
+    .contact_form {
+      float: left;
+      width: 40%;
+      padding-left: 0px; } }

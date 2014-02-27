@@ -3,8 +3,18 @@ layout: default
 title: Downright Simple
 ---
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-
 <div id="home">
+Here be BS.
+</div>
+<div id="posts"><A name="posts"/>
+<h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+<div id="products"><A name="products"/>
   <article>
     <div class="featured-app-review">
       <img src="img/capture_logo_1024_1024.png" alt="Capture - Ideas Instantly" class="featured-app-logo">
@@ -29,7 +39,7 @@ title: Downright Simple
     <p>Both of these can be Downright Simple.</p>
   </div>
   
-  <div id="about" class="section">
+  <div id="about" class="section"><A name="about"/>
     <div class="section-header">Downright Simple</div>
     Downright Simple is a mobile software development studio based in Pittsburgh. We specialize in the design and development of iPhone and iPad applications with a customer-focused and value-driven approach.  Mobile solutions are often more than “just an app”. We work with our clients to outline a complete mobile strategy to achieve their goals, even if that means less work for us. Using this strategy, we’ve delivered successful solutions to clients ranging from small local businesses and non-profit agencies to the largest regional corporations like UPMC and Giant Eagle.  
     <div id="Kelli" class="bio">
@@ -39,11 +49,7 @@ title: Downright Simple
     Chris Allwein is half of Downright Simple and a career software engineer with over 15 years of industry experience. After graduating from Carnegie Mellon with a Computer Science degree, Chris spent a number of years in Harrisburg as a consultant in the public sector helping to improve efficiency and modernize the web-based delivery of government services for the Pennsylvania Game Commission, Pennsylvania Department of Public Welfare, and Pennsylvania Gaming Control Board. After being called in to rescue a failing Real Estate Tax Management project for the City of Baltimore, Chris returned to Pittsburgh where he began developing mobile applications. This led him to regional grocery retailer Giant Eagle, where he led the effort to deliver the initial versions of the Giant Eagle iPhone and Android applications and the follow-up applications for the GetGo chain of convenience stores. Following his successes there, Chris next landed at UPMC Technology Development Center where he led a team of mobile developers in creating a string of applications for users in the medical field, including a complex visualization app that enables doctors to get a one-stop view of a patient’s entire health history. Recently, Chris was talked into starting a mobile development company.
     </div>
   </div>
+   <div id="about" class="section">
+   </div>
   
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
 </div>

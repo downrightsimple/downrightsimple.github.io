@@ -150,6 +150,17 @@ a:hover {
     margin-right: 4%;
     float: right; }
 
+/* Social related */
+.social-link {
+  font-size: smaller; }
+  .social-link a {
+    color: #999999;
+    text-decoration: none; }
+  .social-link a:hover {
+    color: #9bceb6; }
+  .social-link .social-link-logo {
+    height: 1em; }
+
 /* Apple-related */
 .app-store-download {
   padding: 10px;

@@ -1,7 +1,7 @@
 // Colors
 $darkBlueColor: #163173;
 $lightGrayColor: #f4f4f4;
-$mediumGrayColor: #d8b808;
+$mediumGrayColor: #999999;
 $darkGrayColor: #222222;
 $lightGreenColor: #9bceb6;
 $darkGreenColor: #24302b;
@@ -165,6 +165,23 @@ a:hover   { color: #00f; }
     width:72%;
     margin-right: 4%;
     float:right;
+  }
+}
+
+/* Social related */
+.social-link {
+  
+  font-size:smaller;
+  
+  a {
+    color: $mediumGrayColor;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $lightGreenColor;
+  }
+  .social-link-logo {
+    height: 1em;
   }
 }
 

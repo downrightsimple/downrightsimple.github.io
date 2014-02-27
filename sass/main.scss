@@ -9,6 +9,7 @@ $darkGreenColor: #24302b;
 // Fonts
 $fontStack: 'ABeeZee', Helvetica, Arial, sans-serif;
 $companyFontStack: Helvetica, Arial, sans-serif;
+$bioFontStack: 'Oswald', Helvetica, Arial, sans-serif;
 
 // Sizes
 $appIconRadius: 18%;
@@ -165,6 +166,27 @@ a:hover   { color: #00f; }
     width:72%;
     margin-right: 4%;
     float:right;
+  }
+}
+
+.bio {
+  font-family:$bioFontStack;
+  text-align:center;
+  .left-container{
+    .left-half {
+      @include respond_to(narrow-screens) { width: 100%; float: middle; }
+      @include respond_to(medium-screens) { width: 350px; }
+      @include respond_to(wide-screens)   { width: 350px; float: left;}
+    }
+    .right-half {
+      @include respond_to(narrow-screens) { width: 100%; float: middle; }
+      @include respond_to(medium-screens) { margin-left: 450px; float: left;}
+      @include respond_to(wide-screens)   { margin-left: 450px; float: left;}
+    }
+  }
+  
+  .clear {
+    clear:both;
   }
 }
 

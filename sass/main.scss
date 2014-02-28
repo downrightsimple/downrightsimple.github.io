@@ -19,8 +19,10 @@ $calloutBoxRadius: 20px;
 
 // Responsive design
 $break-small: 800px;
-$break-large: 1000px; 
-$header-short: 100px; 
+$break-large: 1000px;
+$header-short-top-padding: 40px;
+$header-short: 100px;
+$header-short-navbar-height: $header-short - $header-short-top-padding;
 $header-tall: 140px;
 $min-logo-width: 300px;
 
@@ -98,8 +100,8 @@ a:hover   { color: #00f; }
   
   .navmenu {
     @include respond_to(narrow-screens) { width: 100%; float:inherit; height: calc(0.3 * #{$header-tall}); }
-    @include respond_to(medium-screens) { float:right; text-align: right; height: calc(#{$header-short} - 40px); padding-top: 40px; }
-    @include respond_to(wide-screens)   { float:right; text-align: right; height: calc(#{$header-short} - 40px); padding-top: 40px; }
+    @include respond_to(medium-screens) { float:right; text-align: right; height: $header-short-navbar-height; padding-top: $header-short-top-padding; }
+    @include respond_to(wide-screens)   { float:right; text-align: right; height: $header-short-navbar-height; padding-top: $header-short-top-padding; }
     color: #aaa;
     
     ul {

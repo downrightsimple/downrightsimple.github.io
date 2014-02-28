@@ -15,7 +15,7 @@ html[xmlns] .clearfix{ display:block}
 .featured_service header h3{margin:0 0 .7em 0; color:$darkGrayColor;}
 .featured_service p{clear:left}
 
-#main-content{margin-bottom:0em; float:left; width:100%; margin-top:-20px; margin-bottom: 40px;
+#main-content{float:left; width:100%; margin-top:-20px; margin-bottom: 20px;
 
 font-size: 100%;
 line-height: 1.5;
@@ -27,7 +27,7 @@ font-size: .7em;
 /* intro */
 .intro{padding:0; margin-bottom:1.5em; }
 .intro .intro_text{
-text-align: center;
+  text-align:center;
 }
 
 

@@ -171,19 +171,22 @@ a:hover   { color: #00f; }
 
 .bio {
   font-family:$bioFontStack;
+  font-size:smaller;
   text-align:center;
-  .left-container{
+    width:100%;  
+    
     .left-half {
+      position:relative;
       @include respond_to(narrow-screens) { width: 100%; float: middle; }
-      @include respond_to(medium-screens) { width: 350px; }
-      @include respond_to(wide-screens)   { width: 350px; float: left;}
+      @include respond_to(medium-screens) { width: 50%; float: left; }
+      @include respond_to(wide-screens)   { width: 50%; float: left;}
     }
     .right-half {
+      position:relative;
       @include respond_to(narrow-screens) { width: 100%; float: middle; }
-      @include respond_to(medium-screens) { margin-left: 450px; float: left;}
-      @include respond_to(wide-screens)   { margin-left: 450px; float: left;}
+      @include respond_to(medium-screens) { margin-left: 50%; float: left;}
+      @include respond_to(wide-screens)   { margin-left: 50%; float: left;}
     }
-  }
   
   .clear {
     clear:both;

@@ -152,30 +152,37 @@ a:hover {
 
 .bio {
   font-family: "Oswald", Helvetica, Arial, sans-serif;
-  text-align: center; }
-  @media only screen and (max-width: 800px) {
-    .bio .left-container .left-half {
-      width: 100%;
-      float: middle; } }
-  @media only screen and (min-width: 801px) and (max-width: 999px) {
-    .bio .left-container .left-half {
-      width: 350px; } }
-  @media only screen and (min-width: 1000px) {
-    .bio .left-container .left-half {
-      width: 350px;
-      float: left; } }
-  @media only screen and (max-width: 800px) {
-    .bio .left-container .right-half {
-      width: 100%;
-      float: middle; } }
-  @media only screen and (min-width: 801px) and (max-width: 999px) {
-    .bio .left-container .right-half {
-      margin-left: 450px;
-      float: left; } }
-  @media only screen and (min-width: 1000px) {
-    .bio .left-container .right-half {
-      margin-left: 450px;
-      float: left; } }
+  font-size: smaller;
+  text-align: center;
+  width: 100%; }
+  .bio .left-half {
+    position: relative; }
+    @media only screen and (max-width: 800px) {
+      .bio .left-half {
+        width: 100%;
+        float: middle; } }
+    @media only screen and (min-width: 801px) and (max-width: 999px) {
+      .bio .left-half {
+        width: 50%;
+        float: left; } }
+    @media only screen and (min-width: 1000px) {
+      .bio .left-half {
+        width: 50%;
+        float: left; } }
+  .bio .right-half {
+    position: relative; }
+    @media only screen and (max-width: 800px) {
+      .bio .right-half {
+        width: 100%;
+        float: middle; } }
+    @media only screen and (min-width: 801px) and (max-width: 999px) {
+      .bio .right-half {
+        margin-left: 50%;
+        float: left; } }
+    @media only screen and (min-width: 1000px) {
+      .bio .right-half {
+        margin-left: 50%;
+        float: left; } }
   .bio .clear {
     clear: both; }
 

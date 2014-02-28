@@ -125,10 +125,24 @@ a:hover {
       color: #880; }
 
 .footer {
+  width: 100%;
   border-width: 1px 0 0 0;
   border-style: solid;
   border-color: #999999;
   font-size: small; }
+  .footer .copyright {
+    float: right;
+    width: 50%;
+    text-align: right; }
+  .footer .navmenu {
+    width: 50%;
+    float: left;
+    text-align: left;
+    overflow: auto; }
+    .footer .navmenu ul {
+      list-style: none outside none; }
+      .footer .navmenu ul li {
+        display: inline; }
 
 /* Featured app specific */
 .featured-app-review {

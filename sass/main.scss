@@ -128,10 +128,29 @@ a:hover   { color: #00f; }
   }
 }
 .footer {
+  width:100%;
   border-width: 1px 0 0 0;
   border-style: solid;
   border-color: $mediumGrayColor;
   font-size:small;
+
+  .copyright {
+    float:right;
+    width:50%;
+    text-align:right;
+  }
+  .navmenu {
+    width:50%;
+    float:left;
+    text-align:left;
+    overflow:auto;
+    ul {
+      list-style: none outside none;
+      li {
+        display: inline;
+      }
+    }
+  }
 }
 
 /* Featured app specific */

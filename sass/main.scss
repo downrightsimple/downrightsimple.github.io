@@ -86,7 +86,6 @@ a:hover   { color: #00f; }
   line-height: 1.5em;
 }
 
-
 .header {
   width: 100%;
   @include respond_to(narrow-screens) { height: $header-tall; text-align: center; font-size:small; }
@@ -131,10 +130,8 @@ a:hover   { color: #00f; }
   }
 }
 
-
-
+/* Featured app specific */
 .featured-app-review {
-
   background: $lightGrayColor;
   overflow:auto;
   padding:10px;
@@ -170,6 +167,7 @@ a:hover   { color: #00f; }
   }
 }
 
+/* Bio block specific */
 .bio {
   font-family:$bioFontStack;
   font-size:smaller;
@@ -180,19 +178,19 @@ a:hover   { color: #00f; }
   margin-top: 20px;
   border-radius: $calloutBoxRadius;
   
-  
-  
   .left-half {
-    @include respond_to(narrow-screens) { border-radius:0; padding:0; margin-left: 5%; width: 40%; float: left;  }
-    @include respond_to(medium-screens) { border-radius:0; padding:0; margin-left: 5%; width: 40%; float: left; }
-    @include respond_to(wide-screens)   { border-radius:0; padding:0; margin-left: 5%; width: 40%; float: left; }
-    
+    border-radius:0;
+    float: left;
+    padding:0;
+    margin-left: 5%;
+    width: 40%;
   }
   .right-half {
-    @include respond_to(narrow-screens) { border-radius:0; padding:0; margin-left: 10%; width: 40%; float: left; }
-    @include respond_to(medium-screens) { border-radius:0; padding:0; margin-left: 10%; width: 40%; float: left;}
-    @include respond_to(wide-screens)   { border-radius:0; padding:0; margin-left: 10%; width: 40%; float: left;}
-    
+    border-radius:0;
+    float: left;
+    padding:0;
+    margin-left: 10%;
+    width: 40%;
   }
 
   .clear {
@@ -202,7 +200,6 @@ a:hover   { color: #00f; }
 
 /* Social related */
 .social-link {
-  
   font-size:smaller;
   
   a {

@@ -5,7 +5,10 @@
             <div class="navmenu">
               <ul class"navlinks">
                 <li><a href="/">Home</a></li>
+{% assign count = {{site.posts | size}} %}
+{% if count > 0 %}
                 <li><a href="/#posts">Posts</a></li>
+{% endif %}
                 <li><a href="/#products">Products</a></li>
                 <li><a href="/#about">About</a></li>
                 <li><a href="/#contact">Contact</a></li>

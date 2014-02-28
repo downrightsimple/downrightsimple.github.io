@@ -38,15 +38,6 @@ $min-logo-width: 300px;
   }
 }
 
-@mixin calculated_width_with_padding($fullWidth, $padding) {
-    width: -moz-calc(#{$fullWidth} - #{$padding});
-    width: -webkit-calc(#{$fullWidth} - #{$padding});
-    width: calc(#{$fullWidth} - #{$padding});
-}
-
-
-
-
 /* Global Reset */
 * {
   margin: 0;
@@ -106,7 +97,6 @@ a:hover   { color: #00f; }
   }
   
   .navmenu {
-    @include calculated_width_with_padding(100%, #{$min-logo-width});
     @include respond_to(narrow-screens) { width: 100%; float:inherit; height: calc(0.3 * #{$header-tall}); }
     @include respond_to(medium-screens) { float:right; text-align: right; height: calc(#{$header-short} - 40px); padding-top: 40px; }
     @include respond_to(wide-screens)   { float:right; text-align: right; height: calc(#{$header-short} - 40px); padding-top: 40px; }

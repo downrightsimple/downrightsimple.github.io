@@ -92,9 +92,6 @@ a:hover {
         float: left;
         display: block; } }
   .header .navmenu {
-    width: -moz-calc(100% - 300px);
-    width: -webkit-calc(100% - 300px);
-    width: calc(100% - 300px);
     color: #aaa; }
     @media only screen and (max-width: 800px) {
       .header .navmenu {

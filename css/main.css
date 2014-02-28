@@ -146,6 +146,15 @@ a:hover {
       list-style: none outside none; }
       .footer .navmenu ul li {
         display: inline; }
+    .footer .navmenu a {
+      font-weight: bold;
+      text-decoration: none;
+      margin-left: 1em;
+      color: #163173; }
+    .footer .navmenu a:visited {
+      color: #163173; }
+    .footer .navmenu a:hover {
+      color: #9bceb6; }
 
 /* Bio block specific */
 .bio {
@@ -156,19 +165,24 @@ a:hover {
   background: #f4f4f4;
   padding: 10px;
   margin-top: 20px;
-  border-radius: 20px; }
+  border-radius: 20px;
+  border-width: 0px 0px 3px 0px;
+  border-style: solid;
+  border-color: #c2bfba; }
   .bio .left-half {
     border-radius: 0;
     float: left;
     padding: 0;
     margin-left: 5%;
-    width: 40%; }
+    width: 40%;
+    border-width: 0; }
   .bio .right-half {
     border-radius: 0;
     float: left;
     padding: 0;
     margin-left: 10%;
-    width: 40%; }
+    width: 40%;
+    border-width: 0; }
   .bio .clear {
     clear: both; }
 
@@ -381,7 +395,10 @@ COLUMNS
   padding: 10px;
   border-radius: 20px;
   width: 100%;
-  font-size: .9em; }
+  font-size: .9em;
+  border-width: 0px 0px 3px 0px;
+  border-style: solid;
+  border-color: #c2bfba; }
   .featured-app-review .featured-app-title {
     width: 76%;
     float: right;

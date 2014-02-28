@@ -32,7 +32,7 @@ p {
   margin: 1em 0; }
 
 a {
-  color: #00b; }
+  color: #163173; }
 
 a:visited {
   color: #a0a; }
@@ -120,9 +120,12 @@ a:hover {
     .header .navmenu a {
       font-weight: bold;
       text-decoration: none;
-      margin-left: 1em; }
+      margin-left: 1em;
+      color: #163173; }
+    .header .navmenu a:visited {
+      color: #163173; }
     .header .navmenu a:hover {
-      color: #880; }
+      color: #9bceb6; }
 
 .footer {
   width: 100%;
@@ -211,7 +214,9 @@ html[xmlns] .clearfix {
 /* featured service */
 .featured_service {
   width: 100%;
-  border-bottom: 1px solid #c2bfba;
+  border-width: 0px 0px 3px 0px;
+  border-style: solid;
+  border-color: #c2bfba;
   padding-top: 20px;
   padding-bottom: 0px;
   padding-right: 10px;
@@ -225,7 +230,7 @@ html[xmlns] .clearfix {
 
 .featured_service header h3 {
   margin: 0 0 .7em 0;
-  /* 24px */ }
+  color: #222222; }
 
 .featured_service p {
   clear: left; }
@@ -238,7 +243,7 @@ html[xmlns] .clearfix {
   margin-bottom: 40px;
   font-size: 100%;
   line-height: 1.5;
-  color: #929291;
+  color: #999999;
   font-size: .7em; }
 
 /* intro */

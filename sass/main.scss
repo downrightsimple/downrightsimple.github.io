@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 { font-size: 100%; }
 h1 { margin-bottom: 1em; }
 p { margin: 1em 0; }
 
-a         { color: #00b; }
+a         { color: $darkBlueColor; }
 a:visited { color: #a0a; }
 a:hover   { color: #00f; }
 
@@ -123,9 +123,13 @@ a:hover   { color: #00f; }
       font-weight: bold;
       text-decoration: none;
       margin-left: 1em;
+      color:$darkBlueColor;
+    }
+    a:visited{
+      color:$darkBlueColor;
     }
     a:hover {
-      color: #880;
+      color: $lightGreenColor;
     }
   }
 }

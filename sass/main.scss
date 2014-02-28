@@ -136,43 +136,6 @@ a:hover   { color: #00f; }
   font-size:small;
 }
 
-/* Featured app specific */
-.featured-app-review {
-  background: $lightGrayColor;
-  overflow:auto;
-  padding:10px;
-  border-radius: $calloutBoxRadius;
-    width:100%;
-  
-  .featured-app-title {
-    width:76%;
-    float:right;
-    font-size:larger;
-    a {
-      color: $darkGreenColor;
-      text-decoration: none;
-    }
-    a:hover {
-      color: $lightGreenColor;
-      text-decoration:underline;
-    }
-  }
-  
-  .featured-app-logo {
-    max-width:20%;
-    float:left;
-    margin-right:4%;
-    border:none;
-    border-radius:$appIconRadius;
-  }
-  
-  .featured-app-description {
-    width:72%;
-    margin-right: 4%;
-    float:left;
-  }
-}
-
 /* Bio block specific */
 .bio {
   font-family:$bioFontStack;
@@ -230,4 +193,4 @@ a:hover   { color: #00f; }
 }
 
 @import "home";
-
+@import "products";

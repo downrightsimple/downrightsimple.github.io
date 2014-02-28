@@ -130,34 +130,6 @@ a:hover {
   border-color: #999999;
   font-size: small; }
 
-/* Featured app specific */
-.featured-app-review {
-  background: #f4f4f4;
-  overflow: auto;
-  padding: 10px;
-  border-radius: 20px;
-  width: 100%; }
-  .featured-app-review .featured-app-title {
-    width: 76%;
-    float: right;
-    font-size: larger; }
-    .featured-app-review .featured-app-title a {
-      color: #24302b;
-      text-decoration: none; }
-    .featured-app-review .featured-app-title a:hover {
-      color: #9bceb6;
-      text-decoration: underline; }
-  .featured-app-review .featured-app-logo {
-    max-width: 20%;
-    float: left;
-    margin-right: 4%;
-    border: none;
-    border-radius: 18%; }
-  .featured-app-review .featured-app-description {
-    width: 72%;
-    margin-right: 4%;
-    float: left; }
-
 /* Bio block specific */
 .bio {
   font-family: "Oswald", Helvetica, Arial, sans-serif;
@@ -230,7 +202,7 @@ html[xmlns] .clearfix {
   padding-bottom: 0px;
   padding-right: 10px;
   padding-left: 10px;
-  background: #f5f4f2;
+  background: #f4f4f4;
   border-radius: 20px; }
 
 .featured_service header img {
@@ -251,10 +223,9 @@ html[xmlns] .clearfix {
   margin-top: -20px;
   margin-bottom: 40px;
   font-size: 100%;
-  font-family: Arial,Helvetica,sans-serif;
   line-height: 1.5;
   color: #929291;
-  font-size: .6em; }
+  font-size: .7em; }
 
 /* intro */
 .intro {
@@ -383,3 +354,32 @@ COLUMNS
       float: left;
       width: 40%;
       padding-left: 0px; } }
+
+/* Featured app specific */
+.featured-app-review {
+  background: #f4f4f4;
+  overflow: auto;
+  padding: 10px;
+  border-radius: 20px;
+  width: 100%;
+  font-size: .9em; }
+  .featured-app-review .featured-app-title {
+    width: 76%;
+    float: right;
+    font-size: larger; }
+    .featured-app-review .featured-app-title a {
+      color: #24302b;
+      text-decoration: none; }
+    .featured-app-review .featured-app-title a:hover {
+      color: #9bceb6;
+      text-decoration: underline; }
+  .featured-app-review .featured-app-logo {
+    max-width: 20%;
+    float: left;
+    margin-right: 4%;
+    border: none;
+    border-radius: 18%; }
+  .featured-app-review .featured-app-description {
+    width: 72%;
+    margin-right: 4%;
+    float: left; }

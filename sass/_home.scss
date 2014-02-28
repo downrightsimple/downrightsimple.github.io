@@ -22,7 +22,7 @@ line-height: 1.5;
 color: #929291;
 font-size: .7em;
 
-}      
+}
 
 /* intro */
 .intro{padding:0; margin-bottom:1.5em; }
@@ -102,4 +102,3 @@ float:left;
 @include respond-to(wide-screens) {float:left;width:40%;padding-left: 0px;   }
 
 }
-  

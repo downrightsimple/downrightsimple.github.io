@@ -128,7 +128,8 @@ a:hover {
   background: #f4f4f4;
   overflow: auto;
   padding: 10px;
-  border-radius: 20px; }
+  border-radius: 20px;
+  width: 100%; }
   .featured-app-review .featured-app-title {
     width: 76%;
     float: right;

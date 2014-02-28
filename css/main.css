@@ -105,13 +105,13 @@ a:hover {
       .header .navmenu {
         float: right;
         text-align: right;
-        height: calc($header-short - 40px);
+        height: calc(100px - 40px);
         padding-top: 40px; } }
     @media only screen and (min-width: 1000px) {
       .header .navmenu {
         float: right;
         text-align: right;
-        height: calc($header-short - 40px);
+        height: calc(100px - 40px);
         padding-top: 40px; } }
     .header .navmenu ul {
       list-style: none outside none; }

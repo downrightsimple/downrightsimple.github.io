@@ -124,6 +124,12 @@ a:hover {
     .header .navmenu a:hover {
       color: #880; }
 
+.footer {
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: #999999;
+  font-size: small; }
+
 /* Featured app specific */
 .featured-app-review {
   background: #f4f4f4;

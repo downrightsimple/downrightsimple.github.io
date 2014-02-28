@@ -397,3 +397,5 @@ COLUMNS
     width: 72%;
     margin-right: 4%;
     float: left; }
+  .featured-app-review .clearboth {
+    clear: both; }

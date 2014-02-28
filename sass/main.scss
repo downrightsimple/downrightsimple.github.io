@@ -100,14 +100,14 @@ a:hover   { color: #00f; }
     max-width:3000px;
     max-height:700px;
     height: auto;
-    @include respond_to(narrow-screens) { width: $min-logo-width; float:middle; display:inline;}
+    @include respond_to(narrow-screens) { width: $min-logo-width; float:inherit; display:inline;}
     @include respond_to(medium-screens) { width: $min-logo-width; float:left; display:block; }
     @include respond_to(wide-screens)   { width: $min-logo-width; float:left; display:block;}
   }
   
   .navmenu {
     @include calculated_width_with_padding(100%, $min-logo-width);
-    @include respond_to(narrow-screens) { width: 100%; float: middle; height: calc(0.3 * $header-tall); }
+    @include respond_to(narrow-screens) { width: 100%; float:inherit; height: calc(0.3 * $header-tall); }
     @include respond_to(medium-screens) { float:right; text-align: right; height: calc($header-short - 40px); padding-top: 40px; }
     @include respond_to(wide-screens)   { float:right; text-align: right; height: calc($header-short - 40px); padding-top: 40px; }
     color: #aaa;

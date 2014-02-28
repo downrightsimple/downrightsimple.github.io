@@ -79,7 +79,7 @@ a:hover {
     @media only screen and (max-width: 800px) {
       .header .logo {
         width: 300px;
-        float: middle;
+        float: inherit;
         display: inline; } }
     @media only screen and (min-width: 801px) and (max-width: 999px) {
       .header .logo {
@@ -99,7 +99,7 @@ a:hover {
     @media only screen and (max-width: 800px) {
       .header .navmenu {
         width: 100%;
-        float: middle;
+        float: inherit;
         height: calc(0.3 * $header-tall); } }
     @media only screen and (min-width: 801px) and (max-width: 999px) {
       .header .navmenu {

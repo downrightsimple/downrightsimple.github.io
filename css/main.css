@@ -100,7 +100,7 @@ a:hover {
       .header .navmenu {
         width: 100%;
         float: inherit;
-        height: calc(0.3 * $header-tall); } }
+        height: calc(0.3 * 140px); } }
     @media only screen and (min-width: 801px) and (max-width: 999px) {
       .header .navmenu {
         float: right;

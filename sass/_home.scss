@@ -1,38 +1,3 @@
-// Responsive design
-$break-small: 500px;
-$break-large: 1500px;
-
-// Mixins
-@mixin linear-gradient-nav() {
-  background-color: $whiteColor; /* fallback color if gradients are not supported */
-  background-image: -webkit-linear-gradient(right, hsla(240,46%,37%,1.0), hsla(240,46%,37%,0.4)); /* For Chrome and Safari */
-  background-image:    -moz-linear-gradient(right, hsla(240,46%,37%,1.0), hsla(240,46%,37%,0.4)); /* For old Fx (3.6 to 15) */
-  background-image:     -ms-linear-gradient(right, hsla(240,46%,37%,1.0), hsla(240,46%,37%,0.4)); /* For pre-releases of IE 10*/
-  background-image:      -o-linear-gradient(right, hsla(240,46%,37%,1.0), hsla(240,46%,37%,0.4)); /* For old Opera (11.1 to 12.0) */ 
-  background-image:         linear-gradient(to left,  rgba(245, 245, 245, 1) 85%, rgba(245, 245, 245,  0.2) 98%, rgba(245, 245, 245, 0)); /* W3C */
-}
-
-@mixin calculated-width($rightPadding) {
-    width: -moz-calc(100% - #{$rightPadding}px);
-    width: -webkit-calc(100% - #{$rightPadding}px);
-    width: calc(100% - #{$rightPadding}px);
-}
-
-@mixin menu-width($menuWidth) {
-  width: #{$menuWidth}px;
-}
-
-@mixin respond-to($media) {
-  @if $media == handhelds {
-    @media only screen and (max-width: $break-small) { @content; }
-  }
-  @else if $media == medium-screens {
-    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
-  }
-  @else if $media == wide-screens {
-    @media only screen and (min-width: $break-large) { @content; }
-  }
-}
 
 
 /* Clearfix ----------- */
@@ -45,7 +10,7 @@ html[xmlns] .clearfix{ display:block}
 
 
 /* featured service */
-.featured_service{width:100%; border-bottom:1px solid #c2bfba; padding-top: 20px; padding-bottom:0px; padding-right: 10px; padding-left: 10px; background: #f5f4f2; border-radius: 20px;}
+.featured_service{width:100%; border-bottom:1px solid #c2bfba; padding-top: 20px; padding-bottom:0px; padding-right: 10px; padding-left: 10px;   background: $lightGrayColor; border-radius: 20px;}
 .featured_service header img{float:left; margin:-2px 20px 0 0} 
 .featured_service header h3{margin:0 0 .7em 0; /* 24px */}
 .featured_service p{clear:left}
@@ -53,12 +18,11 @@ html[xmlns] .clearfix{ display:block}
 #main-content{margin-bottom:0em; float:left; width:100%; margin-top:-20px; margin-bottom: 40px;
 
 font-size: 100%;
-font-family: Arial,Helvetica,sans-serif;
 line-height: 1.5;
 color: #929291;
-font-size: .6em;
+font-size: .7em;
 
-}
+}      
 
 /* intro */
 .intro{padding:0; margin-bottom:1.5em; }

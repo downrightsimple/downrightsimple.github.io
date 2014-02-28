@@ -110,9 +110,7 @@ a:hover   { color: #00f; }
     @include respond_to(wide-screens)   { float:right; text-align: right; height: calc($header-short - 40px); padding-top: 40px; }
     color: #aaa;
     
-    
     ul {
-      
       list-style: none outside none;
       li {
         display: inline;
@@ -128,6 +126,12 @@ a:hover   { color: #00f; }
       color: #880;
     }
   }
+}
+.footer {
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: $mediumGrayColor;
+  font-size:small;
 }
 
 /* Featured app specific */

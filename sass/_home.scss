@@ -102,3 +102,7 @@ float:left;
 @include respond-to(wide-screens) {float:left;width:40%;padding-left: 0px;   }
 
 }
+
+.clearboth{
+  clear:both;
+}

@@ -148,40 +148,50 @@ a:hover {
   .featured-app-review .featured-app-description {
     width: 72%;
     margin-right: 4%;
-    float: right; }
+    float: left; }
 
 .bio {
   font-family: "Oswald", Helvetica, Arial, sans-serif;
   font-size: smaller;
-  text-align: center;
-  width: 100%; }
+  text-align: justify;
+  width: 100%;
+  background: #f4f4f4;
+  overflow: auto;
+  padding: 10px;
+  border-radius: 20px; }
   .bio .left-half {
     position: relative; }
     @media only screen and (max-width: 800px) {
       .bio .left-half {
-        width: 100%;
-        float: middle; } }
+        margin-left: 5%;
+        width: 40%;
+        float: left; } }
     @media only screen and (min-width: 801px) and (max-width: 999px) {
       .bio .left-half {
-        width: 50%;
+        margin-left: 5%;
+        width: 40%;
         float: left; } }
     @media only screen and (min-width: 1000px) {
       .bio .left-half {
-        width: 50%;
+        margin-left: 5%;
+        width: 40%;
         float: left; } }
   .bio .right-half {
     position: relative; }
     @media only screen and (max-width: 800px) {
       .bio .right-half {
-        width: 100%;
-        float: middle; } }
+        margin-left: 10%;
+        width: 40%;
+        float: left; } }
     @media only screen and (min-width: 801px) and (max-width: 999px) {
       .bio .right-half {
-        width: 50%;
+        margin-left: 10%;
+        width: 40%;
         float: left; } }
     @media only screen and (min-width: 1000px) {
       .bio .right-half {
-        width: 50%;
+        margin-left: 10%;
+        width: 40%;
         float: left; } }
   .bio .clear {
     clear: both; }

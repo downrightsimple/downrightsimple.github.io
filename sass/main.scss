@@ -165,29 +165,37 @@ a:hover   { color: #00f; }
   .featured-app-description {
     width:72%;
     margin-right: 4%;
-    float:right;
+    float:left;
   }
 }
 
 .bio {
   font-family:$bioFontStack;
   font-size:smaller;
-  text-align:center;
-    width:100%;  
-    
-    .left-half {
-      position:relative;
-      @include respond_to(narrow-screens) { width: 100%; float: middle; }
-      @include respond_to(medium-screens) { width: 50%; float: left; }
-      @include respond_to(wide-screens)   { width: 50%; float: left;}
-    }
-    .right-half {
-      position:relative;
-      @include respond_to(narrow-screens) { width: 100%; float: middle; }
-      @include respond_to(medium-screens) { width: 50%; float: left;}
-      @include respond_to(wide-screens)   { width: 50%; float: left;}
-    }
+  text-align:justify;
+  width:100%;
+  background: $lightGrayColor;
+  overflow:auto;
+  padding:10px;
+  border-radius: $calloutBoxRadius;
   
+  
+  
+  .left-half {
+    position:relative;
+    @include respond_to(narrow-screens) { margin-left: 5%; width: 40%; float: left;  }
+    @include respond_to(medium-screens) { margin-left: 5%; width: 40%; float: left; }
+    @include respond_to(wide-screens)   { margin-left: 5%; width: 40%; float: left; }
+    
+  }
+  .right-half {
+    position:relative;
+    @include respond_to(narrow-screens) { margin-left: 10%; width: 40%; float: left; }
+    @include respond_to(medium-screens) { margin-left: 10%; width: 40%; float: left;}
+    @include respond_to(wide-screens)   { margin-left: 10%; width: 40%; float: left;}
+    
+  }
+
   .clear {
     clear:both;
   }

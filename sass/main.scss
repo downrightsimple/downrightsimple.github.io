@@ -184,8 +184,8 @@ a:hover   { color: #00f; }
     .right-half {
       position:relative;
       @include respond_to(narrow-screens) { width: 100%; float: middle; }
-      @include respond_to(medium-screens) { margin-left: 50%; float: left;}
-      @include respond_to(wide-screens)   { margin-left: 50%; float: left;}
+      @include respond_to(medium-screens) { width: 50%; float: left;}
+      @include respond_to(wide-screens)   { width: 50%; float: left;}
     }
   
   .clear {

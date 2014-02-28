@@ -177,11 +177,11 @@ a:hover {
         float: middle; } }
     @media only screen and (min-width: 801px) and (max-width: 999px) {
       .bio .right-half {
-        margin-left: 50%;
+        width: 50%;
         float: left; } }
     @media only screen and (min-width: 1000px) {
       .bio .right-half {
-        margin-left: 50%;
+        width: 50%;
         float: left; } }
   .bio .clear {
     clear: both; }

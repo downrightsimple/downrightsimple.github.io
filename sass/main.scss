@@ -21,7 +21,7 @@ $calloutBoxRadius: 20px;
 $break-small: 800px;
 $break-large: 1000px;
 $max-site-width: 0.8 * $break-large;
-$header-short-top-padding: 40px;
+$header-short-top-padding: 34px;
 $header-short: 100px;
 $header-short-navbar-height: $header-short - $header-short-top-padding;
 $header-tall: 140px;
@@ -117,10 +117,10 @@ a:hover   { color: #00f; }
       font-weight: bold;
       text-decoration: none;
       margin-left: 1em;
-      color:$darkBlueColor;
+      color:$darkGrayColor;
     }
     a:visited{
-      color:$darkBlueColor;
+      color:$darkGrayColor;
     }
     a:hover {
       color: $lightGreenColor;

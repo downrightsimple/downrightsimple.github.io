@@ -168,6 +168,7 @@ a:hover {
   border-color: #c2bfba; }
   .bio .left-half {
     border-radius: 0;
+    color: #999999;
     float: left;
     padding: 0;
     margin-left: 5%;
@@ -175,6 +176,7 @@ a:hover {
     border-width: 0; }
   .bio .right-half {
     border-radius: 0;
+    color: #999999;
     float: left;
     padding: 0;
     margin-left: 10%;

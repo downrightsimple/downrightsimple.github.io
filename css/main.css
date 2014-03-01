@@ -435,4 +435,5 @@ COLUMNS
   border-radius: 20px; }
 
 .support_list {
-  margin-top: 20px; }
+  margin-top: 20px;
+  font-size: smaller; }

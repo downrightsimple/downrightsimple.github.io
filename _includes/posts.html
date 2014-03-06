@@ -2,9 +2,11 @@
 {% if count > 0 %}
 <div id="posts">
 <h1>Blog Posts</h1>
-  <ul class="posts">
+  <ul class="postslist">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+       <blockquote class="postsummary">{{ post.excerpt }}</blockquote>
+      </li>
     {% endfor %}
   </ul>
 </div>
